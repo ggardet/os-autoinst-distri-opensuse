@@ -23,7 +23,7 @@ sub run {
     my $python_interpreter = 'python3';
     my $pythonsuffix = '3';
 
-    zypper_call "in tvmc python$pythonsuffix-pytest python$pythonsuffix-tornado gcc-c++";
+    zypper_call "in tvmc python$pythonsuffix-pytest python$pythonsuffix-tornado python$pythonsuffix-onnx gcc-c++";
 
     select_console 'user-console';
     record_info('AutoTVM');
